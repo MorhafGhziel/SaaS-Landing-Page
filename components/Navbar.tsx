@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <section className="py-4">
       <div className="container">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 border border-white/15 rounded-full">
           <div>
             <Image src={logoImage} alt="Layers Logo" />
           </div>
