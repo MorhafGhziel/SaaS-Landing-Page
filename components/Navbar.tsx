@@ -12,7 +12,7 @@ const Navbar = () => {
           <div>
             <Image src={logoImage} alt="Layers Logo" className="h-9 w-auto" />
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end gap-4">
             <Image
               src={menuIcon}
               alt="Butger Menu Icon"
