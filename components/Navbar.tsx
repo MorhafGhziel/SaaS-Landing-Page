@@ -4,7 +4,7 @@ import logoImage from "@/public/logo.svg";
 
 const Navbar = () => {
   return (
-    <section>
+    <section className="py-4">
       <div className="container">
         <div className="grid grid-cols-2">
           <div>
