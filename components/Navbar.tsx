@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="container">
         <div className="grid grid-cols-2 border border-white/15 rounded-full p-2 px-4 items-center">
           <div>
-            <Image src={logoImage} alt="Layers Logo" />
+            <Image src={logoImage} alt="Layers Logo" className="h-9 w-auto" />
           </div>
           <div>
             <Image
