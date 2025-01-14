@@ -18,7 +18,7 @@ const Navbar = () => {
             />
           </div>
           <div>
-            <nav>
+            <nav className="flex gap-6 font-medium">
               {navLinks.map((link) => (
                 <a href={link.href} key={link.label}>
                   {" "}
