@@ -15,8 +15,8 @@ const Navbar = () => {
             <Image
               src={menuIcon}
               alt="Butger Menu Icon"
-              width={23}
-              height={23}
+              width={20}
+              height={20}
             />
           </div>
         </div>
