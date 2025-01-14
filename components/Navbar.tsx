@@ -17,6 +17,7 @@ const Navbar = () => {
               alt="Butger Menu Icon"
               width={20}
               height={20}
+              className="md:hidden"
             />
           </div>
         </div>
