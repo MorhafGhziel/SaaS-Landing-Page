@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import logoImage from "@/public/logo.svg";
 import menuIcon from "@/public/burgerMenu.svg";
+import CustomButton from "./CustomButton";
 
 const Navbar = () => {
   return (
@@ -19,6 +20,7 @@ const Navbar = () => {
               height={20}
               className="md:hidden"
             />
+            <CustomButton variant="secondary">Log In</CustomButton>
           </div>
         </div>
       </div>
