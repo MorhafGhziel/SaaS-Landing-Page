@@ -11,7 +11,7 @@ const Navbar = () => {
           <div>
             <Image src={logoImage} alt="Layers Logo" className="h-9 w-auto" />
           </div>
-          <div>
+          <div className="flex justify-end">
             <Image
               src={menuIcon}
               alt="Butger Menu Icon"
