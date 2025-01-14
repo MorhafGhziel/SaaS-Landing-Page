@@ -3,6 +3,7 @@ import Image from "next/image";
 import logoImage from "@/public/logo.svg";
 import menuIcon from "@/public/burgerMenu.svg";
 import CustomButton from "./CustomButton";
+import { navLinks } from "@/constants";
 
 const Navbar = () => {
   return (
@@ -16,7 +17,16 @@ const Navbar = () => {
               className="h-9 md:h-auto w-auto"
             />
           </div>
-          <div></div>
+          <div>
+            <nav>
+              {navLinks.map((link) => (
+                <a href={link.href} key={link.label}>
+                  {" "}
+                  {link.label}{" "}
+                </a>
+              ))}
+            </nav>
+          </div>
           <div className="flex justify-end gap-4">
             <Image
               src={menuIcon}
