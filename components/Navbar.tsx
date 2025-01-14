@@ -19,6 +19,8 @@ const Navbar = () => {
               height={20}
               className="md:hidden"
             />
+            <button>Log In</button>
+            <button>Sign Up</button>
           </div>
         </div>
       </div>
