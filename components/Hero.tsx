@@ -24,7 +24,11 @@ const Hero = () => {
             placeholder="Enter your email"
             className="bg-transparent px-4"
           />
-          <CustomButton type="submit" variant="primary">
+          <CustomButton
+            type="submit"
+            variant="primary"
+            className="whitespace-nowrap"
+          >
             Sign Up
           </CustomButton>
         </form>
