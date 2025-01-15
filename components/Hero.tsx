@@ -3,6 +3,7 @@ import CustomButton from "./CustomButton";
 import designExample1Image from "@/public/design-example-1.png";
 import designExample2Image from "@/public/design-example-2.png";
 import Image from "next/image";
+import Pointer from "./Pointer";
 
 const Hero = () => {
   return (
@@ -22,6 +23,10 @@ const Hero = () => {
             className="absolute -right-64 -top-16 hidden lg:block"
           />
         </div>
+        <div className="absolute left-56 top-96 hidden lg:block">
+          <Pointer name="Morhaf" />
+        </div>
+
         <div className="flex justify-center">
           <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
             ✨ $7.5M seed round raised
