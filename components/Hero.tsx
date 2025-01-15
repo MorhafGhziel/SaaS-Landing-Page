@@ -1,5 +1,7 @@
 import React from "react";
 import CustomButton from "./CustomButton";
+import designExample1Image from "@/public/design-example-1.png";
+import designExample2Image from "@/public/design-example-2.png";
 
 const Hero = () => {
   return (
