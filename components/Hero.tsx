@@ -10,7 +10,7 @@ const Hero = () => {
             ✨ $7.5M seed round raised
           </div>
         </div>
-        <h1 className="text-6xl font-medium text-center mt-6">
+        <h1 className="text-6xl md:text-7xl font-medium text-center mt-6">
           Impactful design, created effortlessly
         </h1>
         <p className="text-center text-xl text-white/50 mt-8">
@@ -28,6 +28,7 @@ const Hero = () => {
             type="submit"
             variant="primary"
             className="whitespace-nowrap"
+            size="sm"
           >
             Sign Up
           </CustomButton>
