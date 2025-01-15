@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import { ButtonHTMLAttributes } from "react";
 import { cva } from "class-variance-authority";
 
 // Fix 1: Correct the syntax and spelling of 'variants'.
@@ -14,7 +14,7 @@ const classes = cva("border h-12 rounded-full px-6 font-medium", {
 export default function CustomButton(
   props: {
     variant: "primary" | "secondary";
-  } & HTMLAttributes<HTMLButtonElement>
+  } & ButtonHTMLAttributes<HTMLButtonElement>
 ) {
   const { variant, className, ...otherProps } = props;
 
