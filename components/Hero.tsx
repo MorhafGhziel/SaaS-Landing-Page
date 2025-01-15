@@ -1,4 +1,5 @@
 import React from "react";
+import CustomButton from "./CustomButton";
 
 const Hero = () => {
   return (
@@ -23,7 +24,9 @@ const Hero = () => {
             placeholder="Enter your email"
             className="bg-transparent px-4"
           />
-          <button type="submit">Sign Up</button>
+          <CustomButton type="submit" variant="primary">
+            Sign Up
+          </CustomButton>
         </form>
       </div>
     </section>
