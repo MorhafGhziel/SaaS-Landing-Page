@@ -2,11 +2,20 @@ import React from "react";
 import CustomButton from "./CustomButton";
 import designExample1Image from "@/public/design-example-1.png";
 import designExample2Image from "@/public/design-example-2.png";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="py-24">
-      <div className="container">
+    <section className="py-24 overflow-x-clip">
+      <div className="container relative">
+        <div>
+          <Image
+            src={designExample1Image}
+            alt="design example 1 image"
+            className="absolute -left-32 top-16 hidden lg:flex"
+          />
+        </div>
+
         <div className="flex justify-center">
           <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
             ✨ $7.5M seed round raised
