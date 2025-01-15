@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className="text-6xl font-medium text-center mt-6">
           Impactful design, created effortlessly
         </h1>
-        <p>
+        <p className="text-center text-xl text-white/50 mt-8">
           Design tools shouldn&apos;t slow you down. Layers combines powerful
           reatures with an intulive interace that keeps you in your creative
           flow.
