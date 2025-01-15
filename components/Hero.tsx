@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section>
+    <section className="py-24">
       <div className="container">
         <div>$7.5M seed round raised</div>
         <h1>Impactful design, created effortlessly</h1>
