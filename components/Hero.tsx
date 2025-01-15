@@ -26,7 +26,9 @@ const Hero = () => {
         <div className="absolute left-56 top-96 hidden lg:block">
           <Pointer name="Morhaf" />
         </div>
-
+        <div className="absolute right-80 -top-4 hidden lg:block">
+          <Pointer name="Ghziel" color="red" />
+        </div>
         <div className="flex justify-center">
           <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
             ✨ $7.5M seed round raised
