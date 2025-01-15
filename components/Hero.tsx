@@ -7,7 +7,7 @@ const Hero = () => {
         <div>$7.5M seed round raised</div>
         <h1>Impactful design, created effortlessly</h1>
         <p>
-          Design tools shouldn't slow you down. Layers combines powerful
+          Design tools shouldn&apos;t slow you down. Layers combines powerful
           reatures with an intulive interace that keeps you in your creative
           flow.
         </p>
