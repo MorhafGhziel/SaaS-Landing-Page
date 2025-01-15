@@ -9,7 +9,9 @@ const Hero = () => {
             ✨ $7.5M seed round raised
           </div>
         </div>
-        <h1>Impactful design, created effortlessly</h1>
+        <h1 className="text-6xl font-medium text-center mt-6">
+          Impactful design, created effortlessly
+        </h1>
         <p>
           Design tools shouldn&apos;t slow you down. Layers combines powerful
           reatures with an intulive interace that keeps you in your creative
