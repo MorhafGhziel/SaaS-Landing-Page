@@ -4,7 +4,9 @@ const Hero = () => {
   return (
     <section className="py-24">
       <div className="container">
-        <div>$7.5M seed round raised</div>
+        <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
+          ✨ $7.5M seed round raised
+        </div>
         <h1>Impactful design, created effortlessly</h1>
         <p>
           Design tools shouldn&apos;t slow you down. Layers combines powerful
