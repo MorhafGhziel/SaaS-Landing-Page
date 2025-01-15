@@ -11,6 +11,10 @@ const Hero = () => {
           reatures with an intulive interace that keeps you in your creative
           flow.
         </p>
+        <form>
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit">Sign Up</button>
+        </form>
       </div>
     </section>
   );
