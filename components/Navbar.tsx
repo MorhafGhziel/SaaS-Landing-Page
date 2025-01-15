@@ -8,7 +8,7 @@ import { navLinks } from "@/constants";
 const Navbar = () => {
   return (
     <section className="py-4 lg:py-8">
-      <div className="container max-w-5xl mx-auto">
+      <div className="container max-w-5xl">
         <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full px-4 p-2 md:pr-2 items-center">
           <div>
             <Image
