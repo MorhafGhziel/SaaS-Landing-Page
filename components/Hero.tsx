@@ -15,7 +15,13 @@ const Hero = () => {
             className="absolute -left-32 top-16 hidden lg:flex"
           />
         </div>
-
+        <div>
+          <Image
+            src={designExample2Image}
+            alt="design example 2 image"
+            className="absolute -right-64 -top-16 hidden lg:block"
+          />
+        </div>
         <div className="flex justify-center">
           <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
             ✨ $7.5M seed round raised
