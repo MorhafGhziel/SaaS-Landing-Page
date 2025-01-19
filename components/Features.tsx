@@ -26,13 +26,25 @@ const Features = () => {
           >
             <div>
               <Avatar>
-                <Image src={avatar1} alt="Avatar One" />
+                <Image
+                  src={avatar1}
+                  alt="Avatar One"
+                  className="rounded-full"
+                />
               </Avatar>
               <Avatar>
-                <Image src={avatar2} alt="Avatar Two" />
+                <Image
+                  src={avatar2}
+                  alt="Avatar Two"
+                  className="rounded-full"
+                />
               </Avatar>
               <Avatar>
-                <Image src={avatar3} alt="Avatar Three" />
+                <Image
+                  src={avatar3}
+                  alt="Avatar Three"
+                  className="rounded-full"
+                />
               </Avatar>
             </div>
           </FeatureCard>
