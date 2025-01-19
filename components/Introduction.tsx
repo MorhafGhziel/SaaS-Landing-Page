@@ -9,7 +9,7 @@ const Introduction = () => {
         <div className="flex justify-center">
           <Tag>Introducing Layers</Tag>
         </div>
-        <div>
+        <div className="text-4xl text-center font-medium mt-10">
           <span>Your creative process deserves better.</span>
           <span> {text} </span>
           <span>That&apos;s why we built Layers.</span>
