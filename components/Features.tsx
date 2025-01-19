@@ -6,6 +6,7 @@ import Image from "next/image";
 import avatar1 from "@/public/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/public/avatar-lula-meyers.jpg";
 import avatar3 from "@/public/avatar-florence-shaw.jpg";
+import Avatar from "./Avatar";
 
 const Features = () => {
   return (
@@ -24,15 +25,15 @@ const Features = () => {
             description="Work together seamlessly with contlict-tree team editing"
           >
             <div>
-              <div>
+              <Avatar>
                 <Image src={avatar1} alt="Avatar One" />
-              </div>
-              <div>
+              </Avatar>
+              <Avatar>
                 <Image src={avatar2} alt="Avatar Two" />
-              </div>
-              <div>
+              </Avatar>
+              <Avatar>
                 <Image src={avatar3} alt="Avatar Three" />
-              </div>
+              </Avatar>
             </div>
           </FeatureCard>
           <FeatureCard
