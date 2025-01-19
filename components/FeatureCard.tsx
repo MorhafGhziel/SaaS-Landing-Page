@@ -10,7 +10,7 @@ const FeatureCard = (props: {
     <div className="bg-neutral-900 border border-white/10 p-6 rounded-3xl">
       <div>{children}</div>
       <div>
-        <h3>{title}</h3>
+        <h3 className="text-3xl font-medium mt-6">{title}</h3>
         <p>{description}</p>
       </div>
     </div>
