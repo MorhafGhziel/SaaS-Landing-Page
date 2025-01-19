@@ -24,7 +24,7 @@ const Features = () => {
           <FeatureCard
             title="Real-time Collaboration"
             description="Work together seamlessly with contlict-tree team editing"
-            className="col-span-2 lg:col-span-1"
+            className="md:col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex justify-center items-center">
               <Avatar className="z-40">
@@ -63,7 +63,7 @@ const Features = () => {
           <FeatureCard
             title="Interactive Prototyping"
             description="Engage your clients with prototypes that react to user actions"
-            className="col-span-2 lg:col-span-1"
+            className="md:col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex items-center justify-center">
               <p className="text-4xl font-extrabold text-white/20 text-center">
@@ -78,7 +78,7 @@ const Features = () => {
           <FeatureCard
             title="Keyboard Quick Actions"
             description="Powerful commands to help you create desians more quickly"
-            className="col-span-2 col-start-2 lg:col-span-1 lg:col-start-auto"
+            className="md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto"
           >
             {" "}
             <div className="aspect-video flex items-center justify-center gap-4">
