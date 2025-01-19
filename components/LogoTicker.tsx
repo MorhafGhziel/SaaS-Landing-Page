@@ -1,4 +1,5 @@
 import React from "react";
+import { logos } from "@/constants";
 
 const LogoTicker = () => {
   return (
