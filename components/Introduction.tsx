@@ -1,5 +1,6 @@
 import React from "react";
 import { text } from "@/constants";
+import Tag from "./Tag";
 
 const Introduction = () => {
   return (
