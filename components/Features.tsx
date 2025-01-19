@@ -78,8 +78,8 @@ const Features = () => {
             description="Powerful commands to help you create desians more quickly"
           >
             {" "}
-            <div className="aspect-video flex items-center justify-center">
-              <Key>shift</Key>
+            <div className="aspect-video flex items-center justify-center gap-4">
+              <Key className="w-28">shift</Key>
               <Key>alt</Key>
               <Key>C</Key>
             </div>
