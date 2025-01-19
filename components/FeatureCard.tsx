@@ -7,7 +7,7 @@ const FeatureCard = (props: {
 }) => {
   const { title, description, children } = props;
   return (
-    <div>
+    <div className="bg-neutral-900 border border-white/10 p-6 rounded-3xl">
       <div>{children}</div>
       <div>
         <h3>{title}</h3>
