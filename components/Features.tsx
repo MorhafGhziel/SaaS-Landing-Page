@@ -29,7 +29,13 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div></div>
+          <div>
+            <div></div>
+            <div>
+              <h3>Keyboard Quick Actions</h3>
+              <p>Powerful commands to help you create desians more quickly</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
