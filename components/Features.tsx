@@ -13,7 +13,13 @@ const Features = () => {
           Where power meets <span>simplicity</span>
         </h2>
         <div>
-          <div></div>
+          <div>
+            <div></div>
+            <div>
+              <h3>Real-time Collaboration</h3>
+              <p>Work together seamlessly with contlict-tree team editing</p>
+            </div>
+          </div>
           <div></div>
           <div></div>
         </div>
