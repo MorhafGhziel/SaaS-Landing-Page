@@ -4,7 +4,7 @@ import { features } from "@/constants";
 
 const Features = () => {
   return (
-    <section>
+    <section className="py-24">
       <div className="container">
         <div className="flex justify-center">
           <Tag>Features</Tag>
