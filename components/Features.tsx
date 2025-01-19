@@ -1,6 +1,7 @@
 import React from "react";
 import Tag from "./Tag";
 import { features } from "@/constants";
+import FeatureCard from "./FeatureCard";
 
 const Features = () => {
   return (
