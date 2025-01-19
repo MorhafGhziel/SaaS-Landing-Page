@@ -8,7 +8,7 @@ const Introduction = () => {
         <div>* Introducing Layers</div>
         <div>
           <span>Your creative process deserves better.</span>
-          <span></span>
+          <span> {text} </span>
         </div>
       </div>
     </section>
