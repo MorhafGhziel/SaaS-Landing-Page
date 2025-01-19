@@ -7,6 +7,14 @@ const Features = () => {
       <div className="container">
         <div className="flex justify-center">
           <Tag>Features</Tag>
+          <h2>
+            Where power meets <span>simplicity</span>
+          </h2>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </div>
     </section>
