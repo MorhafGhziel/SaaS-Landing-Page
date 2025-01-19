@@ -6,7 +6,7 @@ const Introduction = () => {
   return (
     <section className="py-24">
       <div className="container">
-        <div>Introducing Layers</div>
+        <Tag>Introducing Layers</Tag>
         <div>
           <span>Your creative process deserves better.</span>
           <span> {text} </span>
