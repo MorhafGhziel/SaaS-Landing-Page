@@ -1,7 +1,11 @@
 import React from "react";
 
 const Features = () => {
-  return <div>Features</div>;
+  return (
+    <section>
+      <div className="container"></div>
+    </section>
+  );
 };
 
 export default Features;
