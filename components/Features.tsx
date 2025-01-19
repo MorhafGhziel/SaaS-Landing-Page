@@ -46,6 +46,16 @@ const Features = () => {
                   className="rounded-full"
                 />
               </Avatar>
+              <Avatar className="-ml-6 border-transparent">
+                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <span
+                      className="size-1.5 rounded-full bg-white inline-flex"
+                      key={i}
+                    ></span>
+                  ))}
+                </div>
+              </Avatar>
             </div>
           </FeatureCard>
           <FeatureCard
