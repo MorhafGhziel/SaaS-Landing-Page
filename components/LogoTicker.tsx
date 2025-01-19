@@ -1,7 +1,11 @@
 import React from "react";
 
 const LogoTicker = () => {
-  return <div>LogoTicker</div>;
+  return (
+    <section>
+      <div className="container"></div>
+    </section>
+  );
 };
 
 export default LogoTicker;
