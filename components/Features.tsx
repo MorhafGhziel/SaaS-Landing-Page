@@ -61,7 +61,17 @@ const Features = () => {
           <FeatureCard
             title="Interactive Prototyping"
             description="Engage your clients with prototypes that react to user actions"
-          ></FeatureCard>
+          >
+            <div className="aspect-video flex items-center justify-center">
+              <p className="text-4xl font-extrabold text-white/20 text-center">
+                We&apos;ve achieved{" "}
+                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  incredible
+                </span>{" "}
+                growth this year
+              </p>
+            </div>
+          </FeatureCard>
           <FeatureCard
             title="Keyboard Quick Actions"
             description="Powerful commands to help you create desians more quickly"
