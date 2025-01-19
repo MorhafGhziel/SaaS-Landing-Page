@@ -20,7 +20,15 @@ const Features = () => {
               <p>Work together seamlessly with contlict-tree team editing</p>
             </div>
           </div>
-          <div></div>
+          <div>
+            <div></div>
+            <div>
+              <h3>Interactive Prototyping</h3>
+              <p>
+                Engage your clients with prototypes that react to user actions
+              </p>
+            </div>
+          </div>
           <div></div>
         </div>
       </div>
