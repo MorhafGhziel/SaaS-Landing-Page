@@ -38,6 +38,14 @@ const Features = () => {
             </div>
           </div>
         </div>
+        <div>
+          {features.map((feature) => (
+            <div key={feature}>
+              <span></span>
+              <span> {feature} </span>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
