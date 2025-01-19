@@ -11,7 +11,7 @@ const FeatureCard = (props: {
       <div>{children}</div>
       <div>
         <h3 className="text-3xl font-medium mt-6">{title}</h3>
-        <p>{description}</p>
+        <p className="text-white/50 mt-2">{description}</p>
       </div>
     </div>
   );
