@@ -3,7 +3,7 @@ import React, { Children } from "react";
 const FeatureCard = (props: {
   title: string;
   description: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }) => {
   const { title, description, children } = props;
   return (
