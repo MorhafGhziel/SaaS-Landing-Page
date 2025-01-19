@@ -1,4 +1,5 @@
 import React from "react";
+import { text } from "@/constants";
 
 const Introduction = () => {
   return (
