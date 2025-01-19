@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 
 const FeatureCard = (props: {
   title: string;
@@ -8,7 +8,7 @@ const FeatureCard = (props: {
   const { title, description, children } = props;
   return (
     <div>
-      <div> {children} </div>
+      <div>{children}</div>
       <div>
         <h3>{title}</h3>
         <p>{description}</p>
