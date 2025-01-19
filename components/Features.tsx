@@ -2,6 +2,9 @@ import React from "react";
 import Tag from "./Tag";
 import { features } from "@/constants";
 import FeatureCard from "./FeatureCard";
+import avatar1 from "@/public/avatar-ashwin-santiago.jpg";
+import avatar2 from "@/public/avatar-lula-meyers.jpg";
+import avatar3 from "@/public/avatar-florence-shaw.jpg";
 
 const Features = () => {
   return (
