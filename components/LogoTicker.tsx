@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const LogoTicker = () => {
   return (
-    <section className="py-24 overflow-x-clip">
+    <section className="py-24 lg:py-40 overflow-x-clip">
       <div className="container">
         <h3 className="text-center text-white/50 text-xl">
           Already chosen by these market leaders
