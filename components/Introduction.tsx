@@ -11,8 +11,10 @@ const Introduction = () => {
         </div>
         <div className="text-4xl text-center font-medium mt-10">
           <span>Your creative process deserves better.</span>
-          <span> {text} </span>
-          <span>That&apos;s why we built Layers.</span>
+          <span className="text-white/15"> {text} </span>
+          <span className="text-lime-400 block">
+            That&apos;s why we built Layers.
+          </span>
         </div>
       </div>
     </section>
