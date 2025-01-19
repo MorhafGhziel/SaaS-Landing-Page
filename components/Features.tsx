@@ -24,22 +24,22 @@ const Features = () => {
             title="Real-time Collaboration"
             description="Work together seamlessly with contlict-tree team editing"
           >
-            <div>
-              <Avatar>
+            <div className="aspect-video flex justify-center items-center">
+              <Avatar className="z-40">
                 <Image
                   src={avatar1}
                   alt="Avatar One"
                   className="rounded-full"
                 />
               </Avatar>
-              <Avatar>
+              <Avatar className="-ml-6 border-indigo-500 z-30">
                 <Image
                   src={avatar2}
                   alt="Avatar Two"
                   className="rounded-full"
                 />
               </Avatar>
-              <Avatar>
+              <Avatar className="-ml-6 border-amber-500 z-20">
                 <Image
                   src={avatar3}
                   alt="Avatar Three"
