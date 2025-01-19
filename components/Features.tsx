@@ -2,6 +2,7 @@ import React from "react";
 import Tag from "./Tag";
 import { features } from "@/constants";
 import FeatureCard from "./FeatureCard";
+import Image from "next/image";
 import avatar1 from "@/public/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/public/avatar-lula-meyers.jpg";
 import avatar3 from "@/public/avatar-florence-shaw.jpg";
@@ -21,7 +22,19 @@ const Features = () => {
           <FeatureCard
             title="Real-time Collaboration"
             description="Work together seamlessly with contlict-tree team editing"
-          ></FeatureCard>
+          >
+            <div>
+              <div>
+                <Image src={avatar1} alt="Avatar One" />
+              </div>
+              <div>
+                <Image src={avatar2} alt="Avatar Two" />
+              </div>
+              <div>
+                <Image src={avatar3} alt="Avatar Three" />
+              </div>
+            </div>
+          </FeatureCard>
           <FeatureCard
             title="Interactive Prototyping"
             description="Engage your clients with prototypes that react to user actions"
