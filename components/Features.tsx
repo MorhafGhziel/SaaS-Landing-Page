@@ -1,5 +1,6 @@
 import React from "react";
 import Tag from "./Tag";
+import { features } from "@/constants";
 
 const Features = () => {
   return (
