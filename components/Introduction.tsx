@@ -3,7 +3,7 @@ import { text } from "@/constants";
 
 const Introduction = () => {
   return (
-    <section>
+    <section className="py-24">
       <div className="container">
         <div>* Introducing Layers</div>
         <div>
