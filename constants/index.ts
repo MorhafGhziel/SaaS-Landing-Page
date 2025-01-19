@@ -26,3 +26,13 @@ export const logos = [
 ];
 
 export const text = `You're racing to create exceptional work, but traditional design tools slow you down with unnecessary complexity and steep learning curves.`;
+
+export const features = [
+  "Asset Library",
+  "Code Preview",
+  "Flow Mode",
+  "Smart Sync",
+  "Auto Layout",
+  "Fast Search",
+  "Smart Guides",
+];
