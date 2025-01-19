@@ -75,7 +75,14 @@ const Features = () => {
           <FeatureCard
             title="Keyboard Quick Actions"
             description="Powerful commands to help you create desians more quickly"
-          ></FeatureCard>
+          >
+            {" "}
+            <div className="aspect-video flex items-center justify-center">
+              <div>shift</div>
+              <div>alt</div>
+              <div>C</div>
+            </div>
+          </FeatureCard>
         </div>
         <div>
           {features.map((feature) => (
