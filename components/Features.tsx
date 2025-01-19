@@ -11,7 +11,7 @@ const Features = () => {
         </div>
 
         <h2 className="text-6xl font-medium text-center mt-6">
-          Where power meets <span>simplicity</span>
+          Where power meets <span className="text-lime-400">simplicity</span>
         </h2>
         <div>
           <div>
