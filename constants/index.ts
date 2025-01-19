@@ -24,3 +24,5 @@ export const logos = [
   { name: "Celestial", image: celestialLogo },
   { name: "Twice", image: twiceLogo },
 ];
+
+export const text = `You're racing to create exceptional work, but traditional design tools slow you down with unnecessary complexity and steep learning curves.`;
