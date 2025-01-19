@@ -7,6 +7,7 @@ import avatar1 from "@/public/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/public/avatar-lula-meyers.jpg";
 import avatar3 from "@/public/avatar-florence-shaw.jpg";
 import Avatar from "./Avatar";
+import Key from "./Key";
 
 const Features = () => {
   return (
@@ -78,9 +79,9 @@ const Features = () => {
           >
             {" "}
             <div className="aspect-video flex items-center justify-center">
-              <div>shift</div>
-              <div>alt</div>
-              <div>C</div>
+              <Key>shift</Key>
+              <Key>alt</Key>
+              <Key>C</Key>
             </div>
           </FeatureCard>
         </div>
