@@ -4,7 +4,7 @@ import Tag from "./Tag";
 
 const Introduction = () => {
   return (
-    <section className="py-24">
+    <section className="py-28">
       <div className="container">
         <div className="flex justify-center">
           <Tag>Introducing Layers</Tag>
