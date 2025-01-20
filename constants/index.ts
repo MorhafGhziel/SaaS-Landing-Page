@@ -37,7 +37,7 @@ export const features = [
   "Smart Guides",
 ];
 
-const integrations = [
+export const integrations = [
   {
     name: "Figma",
     icon: "figma-logo.svg",
