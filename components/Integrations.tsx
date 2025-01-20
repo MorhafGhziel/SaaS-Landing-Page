@@ -8,6 +8,9 @@ const Integrations = () => {
         <div className="flex justify-center items-center">
           <Tag>Integrations</Tag>
         </div>
+        <h2>
+          Plays well with <span>others</span>
+        </h2>
       </div>
     </section>
   );
