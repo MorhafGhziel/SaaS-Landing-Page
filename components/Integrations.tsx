@@ -20,7 +20,10 @@ const Integrations = () => {
       </div>
       <div>
         {integrations.map((integration) => (
-          <div key={integration.name}>
+          <div
+            key={integration.name}
+            className="bg-neutral-900 border border-white/10 rounded-3xl p-6"
+          >
             <div>
               <Image
                 src={integration.icon}
