@@ -32,7 +32,7 @@ const Integrations = () => {
                 height={96}
               />
             </div>
-            <h3> {integration.name} </h3>
+            <h3 className="text-3xl text-center mt-6"> {integration.name} </h3>
             <p> {integration.description} </p>
           </div>
         ))}
