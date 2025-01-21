@@ -11,7 +11,7 @@ const Integrations = () => {
           <Tag>Integrations</Tag>
         </div>
         <h2 className="text-6xl font-medium mt-6">
-          Plays well with <span>others</span>
+          Plays well with <span className="text-lime-400">others</span>
         </h2>
         <p className="text-white/50 mt-4 text-lg">
           Layels seattless connects wil vour lavore loois, makine it easy to
