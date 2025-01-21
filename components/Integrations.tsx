@@ -24,7 +24,7 @@ const Integrations = () => {
             key={integration.name}
             className="bg-neutral-900 border border-white/10 rounded-3xl p-6"
           >
-            <div>
+            <div className="flex justify-center">
               <Image
                 src={integration.icon}
                 alt={integration.name}
