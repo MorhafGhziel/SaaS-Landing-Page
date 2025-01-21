@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Integrations = () => {
   return (
-    <section>
+    <section className="py-24 overflow-hidden">
       <div className="container">
         <div className="flex justify-center items-center">
           <Tag>Integrations</Tag>
@@ -22,13 +22,12 @@ const Integrations = () => {
         {integrations.map((integration) => (
           <div key={integration.name}>
             <div>
-              {" "}
               <Image
                 src={integration.icon}
                 alt={integration.name}
                 width={96}
                 height={96}
-              />{" "}
+              />
             </div>
             <h3> {integration.name} </h3>
             <p> {integration.description} </p>
