@@ -13,7 +13,7 @@ const Integrations = () => {
         <h2 className="text-6xl font-medium mt-6">
           Plays well with <span>others</span>
         </h2>
-        <p>
+        <p className="text-white/50 mt-4 text-lg">
           Layels seattless connects wil vour lavore loois, makine it easy to
           plug into any workflow and collaborate across olatorms
         </p>
