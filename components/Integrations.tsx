@@ -10,7 +10,7 @@ const Integrations = () => {
         <div className="flex justify-center items-center">
           <Tag>Integrations</Tag>
         </div>
-        <h2>
+        <h2 className="text-6xl font-medium mt-6">
           Plays well with <span>others</span>
         </h2>
         <p>
