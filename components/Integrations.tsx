@@ -18,7 +18,7 @@ const Integrations = () => {
           plug into any workflow and collaborate across olatorms
         </p>
       </div>
-      <div className="flex flex-col gap4 pb-4">
+      <div className="flex flex-col gap-4 pb-4">
         {integrations.map((integration) => (
           <div
             key={integration.name}
