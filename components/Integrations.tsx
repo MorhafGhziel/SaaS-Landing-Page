@@ -21,7 +21,10 @@ const Integrations = () => {
       </div>
       <div className="h-[400px] mt-8 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
         <IntegrationsColumn integrations={integrations} />
-        <IntegrationsColumn integrations={integrations.slice().reverse()} />
+        <IntegrationsColumn
+          integrations={integrations.slice().reverse()}
+          className="hidden md:flex"
+        />
       </div>
     </section>
   );
