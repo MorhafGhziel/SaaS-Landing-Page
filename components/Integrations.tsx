@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Integrations = () => {
   return (
-    <section className="py-24 overflow-hidden">
+    <section className="py-24 mt-8 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
       <div className="container">
         <div className="flex justify-center items-center">
           <Tag>Integrations</Tag>
