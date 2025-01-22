@@ -7,9 +7,7 @@ const Integrations = () => {
   return (
     <section className="py-24 overflow-hidden">
       <div className="container">
-        <div className="flex justify-center items-center">
-          <Tag>Integrations</Tag>
-        </div>
+        <Tag>Integrations</Tag>
         <h2 className="text-6xl font-medium mt-6">
           Plays well with <span className="text-lime-400">others</span>
         </h2>
