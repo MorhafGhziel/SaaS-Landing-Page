@@ -1,7 +1,6 @@
 import React from "react";
 import Tag from "./Tag";
 import { integrations } from "@/constants";
-import Image from "next/image";
 import IntegrationsColumn from "./IntegrationsColumn";
 
 const Integrations = () => {
