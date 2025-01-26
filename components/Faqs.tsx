@@ -10,7 +10,8 @@ const Faqs = () => {
           <Tag>Faqs</Tag>
         </div>
         <h2 className="text-6xl font-medium mt-6 text-center">
-          Questions? We&apos;ve got <span>answers</span>
+          Questions? We&apos;ve got{" "}
+          <span className="text-lime-400">answers</span>
         </h2>
         <div>
           {faqs.map((faq) => (
