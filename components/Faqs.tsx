@@ -13,7 +13,7 @@ const Faqs = () => {
           Questions? We&apos;ve got{" "}
           <span className="text-lime-400">answers</span>
         </h2>
-        <div>
+        <div className="mt-12 flex flex-col gap-6">
           {faqs.map((faq) => (
             <div
               key={faq.question}
