@@ -33,7 +33,10 @@ const Faqs = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-plus text-lime-400 flex-shrink-0"
+                  className={twMerge(
+                    "feather feather-plus text-lime-400 flex-shrink-0",
+                    selectedIndex === faqIndex && "rotate-45"
+                  )}
                 >
                   <line x1="12" y1="5" x2="12" y2="19"></line>
                   <line x1="5" y1="12" x2="19" y2="12"></line>
