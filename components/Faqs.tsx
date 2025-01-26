@@ -7,7 +7,7 @@ const Faqs = () => {
       <div className="container">
         <Tag>Faqs</Tag>
         <h2>
-          Questions? We've got <span>answers</span>
+          Questions? We&apos;ve got <span>answers</span>
         </h2>
       </div>
     </section>
