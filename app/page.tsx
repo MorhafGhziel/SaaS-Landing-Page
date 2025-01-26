@@ -4,6 +4,7 @@ import LogoTicker from "@/components/LogoTicker";
 import Introduction from "@/components/Introduction";
 import Features from "@/components/Features";
 import Integrations from "@/components/Integrations";
+import Faqs from "@/components/Faqs";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Introduction />
       <Features />
       <Integrations />
+      <Faqs />
     </>
   );
 }
