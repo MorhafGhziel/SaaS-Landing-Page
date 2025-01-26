@@ -97,3 +97,9 @@ export const faqs = [
       "Layers is built for collaboration. You can invite team members to your projects, share feedback, and work together in real-time.",
   },
 ];
+
+export const footerLinks = [
+  { href: "#", label: "Contact" },
+  { href: "#", label: "Privacy Policy" },
+  { href: "#", label: "Terms & Conditions" },
+];
