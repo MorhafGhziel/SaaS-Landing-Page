@@ -9,7 +9,7 @@ const Faqs = () => {
         <div className="flex justify-center">
           <Tag>Faqs</Tag>
         </div>
-        <h2>
+        <h2 className="text-6xl font-medium mt-6 text-center">
           Questions? We&apos;ve got <span>answers</span>
         </h2>
         <div>
