@@ -5,6 +5,7 @@ import Introduction from "@/components/Introduction";
 import Features from "@/components/Features";
 import Integrations from "@/components/Integrations";
 import Faqs from "@/components/Faqs";
+import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <Integrations />
       <Faqs />
+      <CallToAction />
     </>
   );
 }
