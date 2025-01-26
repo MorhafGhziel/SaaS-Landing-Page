@@ -1,6 +1,7 @@
 import React from "react";
 import logoImage from "@/public/logo.svg";
 import Image from "next/image";
+import { footerLinks } from "@/constants";
 
 const Footer = () => {
   return (
@@ -10,7 +11,11 @@ const Footer = () => {
           <div>
             <Image src={logoImage} alt="Layers Logo" />
           </div>
-          <div></div>
+          <div>
+            {footerLinks.map((link) => (
+              <a href={link.href}>{link.label}</a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
