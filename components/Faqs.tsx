@@ -15,7 +15,10 @@ const Faqs = () => {
         </h2>
         <div>
           {faqs.map((faq) => (
-            <div key={faq.question}>
+            <div
+              key={faq.question}
+              className="bg-neutral-900 rounded-2xl border border-white/10 p-6"
+            >
               <div>
                 <h3>{faq.question}</h3>
                 <svg
