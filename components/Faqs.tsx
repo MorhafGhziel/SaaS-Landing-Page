@@ -19,7 +19,7 @@ const Faqs = () => {
               key={faq.question}
               className="bg-neutral-900 rounded-2xl border border-white/10 p-6"
             >
-              <div>
+              <div className="flex justify-between items-center">
                 <h3>{faq.question}</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
