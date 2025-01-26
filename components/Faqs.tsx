@@ -37,6 +37,9 @@ const Faqs = () => {
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                 </svg>
               </div>
+              <div>
+                <p className="text-white/50">{faq.answer}</p>
+              </div>
             </div>
           ))}
         </div>
