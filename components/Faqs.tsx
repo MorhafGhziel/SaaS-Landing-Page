@@ -6,7 +6,9 @@ const Faqs = () => {
   return (
     <section>
       <div className="container">
-        <Tag>Faqs</Tag>
+        <div className="flex justify-center">
+          <Tag>Faqs</Tag>
+        </div>
         <h2>
           Questions? We&apos;ve got <span>answers</span>
         </h2>
