@@ -70,7 +70,7 @@ export const integrations = [
   },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: "How is Layers different from other design tools?",
     answer:
