@@ -6,6 +6,7 @@ import logoImage from "@/public/logo.svg";
 import CustomButton from "./CustomButton";
 import { navLinks } from "@/constants";
 import { twMerge } from "tailwind-merge";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,17 +88,19 @@ const Navbar = () => {
               </CustomButton>
             </div>
           </div>
-          {isOpen && (
-            <div className="flex flex-col items-center gap-4 py-4">
-              {navLinks.map((link) => (
-                <a key={link.label} href={link.href}>
-                  {link.label}
-                </a>
-              ))}
-              <CustomButton variant="secondary">Log In</CustomButton>
-              <CustomButton variant="primary">Sign Up</CustomButton>
-            </div>
-          )}
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div className="flex flex-col items-center gap-4 py-4">
+                {navLinks.map((link) => (
+                  <a key={link.label} href={link.href}>
+                    {link.label}
+                  </a>
+                ))}
+                <CustomButton variant="secondary">Log In</CustomButton>
+                <CustomButton variant="primary">Sign Up</CustomButton>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>
