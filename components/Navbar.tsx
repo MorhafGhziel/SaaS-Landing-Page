@@ -49,7 +49,7 @@ const Navbar = () => {
                 x2="21"
                 y2="6"
                 className={twMerge(
-                  "origin-left",
+                  "origin-left transition",
                   isOpen && "rotate-45 -translate-y-1"
                 )}
               ></line>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 y1="12"
                 x2="21"
                 y2="12"
-                className={twMerge(isOpen && "opacity-0")}
+                className={twMerge("transition", isOpen && "opacity-0")}
               ></line>
               <line
                 x1="3"
@@ -66,7 +66,7 @@ const Navbar = () => {
                 x2="21"
                 y2="18"
                 className={twMerge(
-                  "origin-left",
+                  "origin-left transition",
                   isOpen && "-rotate-45 translate-y-1"
                 )}
               ></line>
