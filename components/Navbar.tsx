@@ -1,10 +1,14 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import logoImage from "@/public/logo.svg";
 import CustomButton from "./CustomButton";
 import { navLinks } from "@/constants";
+import { twMerge } from "tailwind-merge";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="py-4 lg:py-8 sticky top-0 z-50">
       <div className="container max-w-5xl">
@@ -39,7 +43,13 @@ const Navbar = () => {
               className="feather feather-menu md:hidden"
             >
               <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line
+                x1="3"
+                y1="12"
+                x2="21"
+                y2="12"
+                className={twMerge(isOpen && "hidden")}
+              ></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
             <CustomButton
