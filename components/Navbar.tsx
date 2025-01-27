@@ -48,7 +48,7 @@ const Navbar = () => {
                 y1="12"
                 x2="21"
                 y2="12"
-                className={twMerge(isOpen && "hidden")}
+                className={twMerge(isOpen && "opacity-0")}
               ></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
