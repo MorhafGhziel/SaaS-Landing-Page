@@ -88,9 +88,9 @@ const Navbar = () => {
             </div>
           </div>
           {isOpen && (
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center gap-4">
               {navLinks.map((link) => (
-                <a key={link.label} href={link.href} className="py-2  ">
+                <a key={link.label} href={link.href}>
                   {link.label}
                 </a>
               ))}
