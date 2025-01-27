@@ -90,7 +90,12 @@ const Navbar = () => {
           </div>
           <AnimatePresence>
             {isOpen && (
-              <motion.div className="flex flex-col items-center gap-4 py-4">
+              <motion.div
+                initial={{ height: 0 }}
+                animate={{ height: "auto" }}
+                exit={{ height: 0 }}
+                className="flex flex-col items-center gap-4 py-4"
+              >
                 {navLinks.map((link) => (
                   <a key={link.label} href={link.href}>
                     {link.label}
