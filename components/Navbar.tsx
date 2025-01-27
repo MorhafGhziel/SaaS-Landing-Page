@@ -90,7 +90,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col items-center">
             {navLinks.map((link) => (
-              <a key={link.label} href={link.href} className=" ">
+              <a key={link.label} href={link.href} className="py-2">
                 {link.label}
               </a>
             ))}
