@@ -6,6 +6,7 @@ import logoImage from "@/public/logo.svg";
 import CustomButton from "./CustomButton";
 import { navLinks } from "@/constants";
 import { twMerge } from "tailwind-merge";
+import { link } from "fs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,6 +87,13 @@ const Navbar = () => {
                 Sign Up
               </CustomButton>
             </div>
+          </div>
+          <div>
+            {navLinks.map((link) => (
+              <a key={link.label} href={link.href} className=" ">
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>
