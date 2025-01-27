@@ -94,15 +94,17 @@ const Navbar = () => {
                 initial={{ height: 0 }}
                 animate={{ height: "auto" }}
                 exit={{ height: 0 }}
-                className="flex flex-col items-center gap-4 py-4"
+                className="overflow-hidden"
               >
-                {navLinks.map((link) => (
-                  <a key={link.label} href={link.href}>
-                    {link.label}
-                  </a>
-                ))}
-                <CustomButton variant="secondary">Log In</CustomButton>
-                <CustomButton variant="primary">Sign Up</CustomButton>
+                <div className="flex flex-col items-center gap-4 py-4">
+                  {navLinks.map((link) => (
+                    <a key={link.label} href={link.href}>
+                      {link.label}
+                    </a>
+                  ))}
+                  <CustomButton variant="secondary">Log In</CustomButton>
+                  <CustomButton variant="primary">Sign Up</CustomButton>
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
