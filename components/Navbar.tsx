@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import logoImage from "@/public/logo.svg";
-import menuIcon from "@/public/burgerMenu.svg";
 import CustomButton from "./CustomButton";
 import { navLinks } from "@/constants";
 
@@ -28,13 +27,21 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="flex justify-end gap-4">
-            <Image
-              src={menuIcon}
-              alt="Butger Menu Icon"
-              width={20}
-              height={20}
-              className="md:hidden"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-menu md:hidden"
+            >
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
             <CustomButton
               variant="secondary"
               className="hidden md:inline-flex items-center"
