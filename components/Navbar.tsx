@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <section className="py-4 lg:py-8 sticky top-0 z-50">
       <div className="container max-w-5xl">
-        <div className="border border-white/15 rounded-full bg-neutral-950/70 backdrop-blur">
+        <div className="border border-white/15 rounded-[27px] bg-neutral-950/70 backdrop-blur">
           <div className="grid grid-cols-2 lg:grid-cols-3 px-4 p-2 md:pr-2 items-center">
             <div>
               <Image
@@ -90,7 +90,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col items-center">
             {navLinks.map((link) => (
-              <a key={link.label} href={link.href} className="py-2">
+              <a key={link.label} href={link.href} className="py-2  ">
                 {link.label}
               </a>
             ))}
