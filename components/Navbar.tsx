@@ -6,7 +6,6 @@ import logoImage from "@/public/logo.svg";
 import CustomButton from "./CustomButton";
 import { navLinks } from "@/constants";
 import { twMerge } from "tailwind-merge";
-import { link } from "fs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
