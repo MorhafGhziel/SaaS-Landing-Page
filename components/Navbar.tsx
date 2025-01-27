@@ -43,7 +43,16 @@ const Navbar = () => {
               className="feather feather-menu md:hidden"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line
+                x1="3"
+                y1="6"
+                x2="21"
+                y2="6"
+                className={twMerge(
+                  "origin-left",
+                  isOpen && "rotate-45 -translate-y-1"
+                )}
+              ></line>
               <line
                 x1="3"
                 y1="12"
@@ -51,7 +60,16 @@ const Navbar = () => {
                 y2="12"
                 className={twMerge(isOpen && "opacity-0")}
               ></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
+              <line
+                x1="3"
+                y1="18"
+                x2="21"
+                y2="18"
+                className={twMerge(
+                  "origin-left",
+                  isOpen && "-rotate-45 translate-y-1"
+                )}
+              ></line>
             </svg>
             <CustomButton
               variant="secondary"
