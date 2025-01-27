@@ -88,7 +88,7 @@ const Navbar = () => {
               </CustomButton>
             </div>
           </div>
-          <div>
+          <div className="flex flex-col">
             {navLinks.map((link) => (
               <a key={link.label} href={link.href} className=" ">
                 {link.label}
