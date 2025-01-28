@@ -60,7 +60,10 @@ const Hero = () => {
           />
         </motion.div>
 
-        <motion.div className="absolute right-80 -top-4 hidden lg:block">
+        <motion.div
+          ref={rightPointerScope}
+          className="absolute right-80 -top-4 hidden lg:block"
+        >
           <Pointer name="Ghziel" color="red" />
         </motion.div>
         <div className="flex justify-center">
