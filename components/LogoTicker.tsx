@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { logos } from "@/constants";
 import Image from "next/image";
 
@@ -11,8 +11,12 @@ const LogoTicker = () => {
         </h3>
         <div className="overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <div className="flex gap-24 pr-24">
-            {logos.map((logo) => (
-              <Image src={logo.image} key={logo.name} alt={logo.name} />
+            {Array.from({ length: 2 }).map((_, i) => (
+              <Fragment key={i}>
+                {logos.map((logo) => (
+                  <Image src={logo.image} key={logo.name} alt={logo.name} />
+                ))}
+              </Fragment>
             ))}
           </div>
         </div>
