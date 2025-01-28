@@ -22,7 +22,7 @@ const Hero = () => {
 
     leftPointerAnimate([
       [leftPointerScope.current, { opacity: 1 }, { duration: 0.5 }],
-      [leftPointerScope.current, { y: 0, x: -100 }, { duration: 0.5 }],
+      [leftPointerScope.current, { y: 0, x: -150 }, { duration: 0.5 }],
       [
         leftPointerScope.current,
         { x: 0, y: [0, 16, 0] },
