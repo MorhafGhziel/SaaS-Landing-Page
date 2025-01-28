@@ -55,11 +55,13 @@ const Hero = () => {
         <motion.div
           ref={leftDesignScope}
           initial={{ opacity: 0, y: 100, x: -100 }}
+          drag
         >
           <Image
             src={designExample1Image}
             alt="design example 1 image"
             className="absolute -left-32 top-16 hidden lg:block"
+            draggable="false"
           />
         </motion.div>
 
