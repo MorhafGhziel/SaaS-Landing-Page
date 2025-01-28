@@ -29,6 +29,10 @@ const Hero = () => {
         { duration: 0.5, ease: "easeInOut" },
       ],
     ]);
+
+    rightDesignAnimate([
+      [rightDesignScope.current, { opacity: 1 }, { duration: 0.5 }],
+    ]);
   }, []);
   return (
     <section className="py-24 overflow-x-clip">
