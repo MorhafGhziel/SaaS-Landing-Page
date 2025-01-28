@@ -11,6 +11,8 @@ import { motion, useAnimate } from "framer-motion";
 const Hero = () => {
   const [leftDesignScope, leftDesignAnimate] = useAnimate();
   const [leftPointerScope, leftPointerAnimate] = useAnimate();
+  const [rightDesignScope, rightDesignAnimate] = useAnimate();
+  const [rightPointerScope, rightPointerAnimate] = useAnimate();
 
   useEffect(() => {
     leftDesignAnimate([
@@ -50,17 +52,17 @@ const Hero = () => {
           <Pointer name="Morhaf" />
         </motion.div>
 
-        <div>
+        <motion.div ref={rightDesignScope}>
           <Image
             src={designExample2Image}
             alt="design example 2 image"
             className="absolute -right-64 -top-16 hidden lg:block"
           />
-        </div>
+        </motion.div>
 
-        <div className="absolute right-80 -top-4 hidden lg:block">
+        <motion.div className="absolute right-80 -top-4 hidden lg:block">
           <Pointer name="Ghziel" color="red" />
-        </div>
+        </motion.div>
         <div className="flex justify-center">
           <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
             ✨ $7.5M seed round raised
