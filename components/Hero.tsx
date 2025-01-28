@@ -7,6 +7,7 @@ import designExample2Image from "@/public/design-example-2.png";
 import Image from "next/image";
 import Pointer from "./Pointer";
 import { motion, useAnimate } from "framer-motion";
+import cursorYouImage from "@/public/cursor-you.svg";
 
 const Hero = () => {
   const [leftDesignScope, leftDesignAnimate] = useAnimate();
@@ -50,7 +51,12 @@ const Hero = () => {
     ]);
   }, []);
   return (
-    <section className="py-24 overflow-x-clip">
+    <section
+      className="py-24 overflow-x-clip"
+      style={{
+        cursor: `url(${cursorYouImage.src}), auto`,
+      }}
+    >
       <div className="container relative">
         <motion.div
           ref={leftDesignScope}
