@@ -12,11 +12,15 @@ const Hero = () => {
   const [leftDesignScope, leftDesignAnimate] = useAnimate();
   const [leftPointerScope, leftPointerAnimate] = useAnimate();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    leftDesignAnimate([
+      [leftDesignScope.current, { opacity: 1 }, { duration: 0.5 }],
+    ]);
+  }, []);
   return (
     <section className="py-24 overflow-x-clip">
       <div className="container relative">
-        <motion.div ref={leftDesignScope}>
+        <motion.div ref={leftDesignScope} initial={{ opacity: 0 }}>
           <Image
             src={designExample1Image}
             alt="design example 1 image"
