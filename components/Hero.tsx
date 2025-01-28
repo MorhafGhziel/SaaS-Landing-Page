@@ -34,6 +34,14 @@ const Hero = () => {
       [rightDesignScope.current, { opacity: 1 }, { duration: 0.5, delay: 1.5 }],
       [rightDesignScope.current, { y: 0, x: 60 }, { duration: 0.5 }],
     ]);
+
+    rightPointerAnimate([
+      [
+        rightPointerScope.current,
+        { opacity: 1 },
+        { duration: 0.5, delay: 1.5 },
+      ],
+    ]);
   }, []);
   return (
     <section className="py-24 overflow-x-clip">
