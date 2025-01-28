@@ -13,7 +13,17 @@ const LogoTicker = () => {
           Already chosen by these market leaders
         </h3>
         <div className="overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <motion.div className="flex gap-24 pr-24">
+          <motion.div
+            animate={{
+              x: "-50%",
+            }}
+            transition={{
+              duration: 5,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            className="flex gap-24 pr-24"
+          >
             {Array.from({ length: 2 }).map((_, i) => (
               <Fragment key={i}>
                 {logos.map((logo) => (
