@@ -1,18 +1,22 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import CustomButton from "./CustomButton";
 import designExample1Image from "@/public/design-example-1.png";
 import designExample2Image from "@/public/design-example-2.png";
 import Image from "next/image";
 import Pointer from "./Pointer";
-import { motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 
 const Hero = () => {
+  const [leftDesignScope, leftDesignAnimate] = useAnimate();
+  const [leftPointerScope, leftPointerAnimate] = useAnimate();
+
+  useEffect(() => {}, []);
   return (
     <section className="py-24 overflow-x-clip">
       <div className="container relative">
-        <motion.div>
+        <motion.div ref={leftDesignScope}>
           <Image
             src={designExample1Image}
             alt="design example 1 image"
@@ -20,7 +24,10 @@ const Hero = () => {
           />
         </motion.div>
 
-        <motion.div className="absolute left-56 top-96 hidden lg:block">
+        <motion.div
+          ref={leftPointerScope}
+          className="absolute left-56 top-96 hidden lg:block"
+        >
           <Pointer name="Morhaf" />
         </motion.div>
 
