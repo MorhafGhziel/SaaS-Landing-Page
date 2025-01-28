@@ -1,6 +1,9 @@
+"use client";
+
 import React, { Fragment } from "react";
 import { logos } from "@/constants";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const LogoTicker = () => {
   return (
@@ -10,7 +13,7 @@ const LogoTicker = () => {
           Already chosen by these market leaders
         </h3>
         <div className="overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex gap-24 pr-24">
+          <motion.div className="flex gap-24 pr-24">
             {Array.from({ length: 2 }).map((_, i) => (
               <Fragment key={i}>
                 {logos.map((logo) => (
@@ -18,7 +21,7 @@ const LogoTicker = () => {
                 ))}
               </Fragment>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
