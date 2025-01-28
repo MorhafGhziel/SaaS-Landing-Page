@@ -15,16 +15,20 @@ const Hero = () => {
   useEffect(() => {
     leftDesignAnimate([
       [leftDesignScope.current, { opacity: 1 }, { duration: 0.5 }],
+      [leftDesignScope.current, { y: 0, x: 0 }, { duration: 0.5 }],
     ]);
   }, []);
   return (
     <section className="py-24 overflow-x-clip">
       <div className="container relative">
-        <motion.div ref={leftDesignScope} initial={{ opacity: 0 }}>
+        <motion.div
+          ref={leftDesignScope}
+          initial={{ opacity: 0, y: 100, x: -100 }}
+        >
           <Image
             src={designExample1Image}
             alt="design example 1 image"
-            className="absolute -left-32 top-16 hidden lg:flex"
+            className="absolute -left-32 top-16 hidden lg:block"
           />
         </motion.div>
 
