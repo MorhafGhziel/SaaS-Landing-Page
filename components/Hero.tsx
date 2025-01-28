@@ -15,7 +15,7 @@ const Hero = () => {
   useEffect(() => {
     leftDesignAnimate([
       [leftDesignScope.current, { opacity: 1 }, { duration: 0.5 }],
-      [leftDesignScope.current, { y: 0, x: 0 }, { duration: 0.5 }],
+      [leftDesignScope.current, { y: 0, x: -55 }, { duration: 0.5 }],
     ]);
 
     leftPointerAnimate([
