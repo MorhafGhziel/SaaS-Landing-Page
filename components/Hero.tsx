@@ -31,7 +31,7 @@ const Hero = () => {
     ]);
 
     rightDesignAnimate([
-      [rightDesignScope.current, { opacity: 1 }, { duration: 0.5 }],
+      [rightDesignScope.current, { opacity: 1 }, { duration: 0.5, delay: 1.5 }],
     ]);
   }, []);
   return (
