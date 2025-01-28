@@ -52,7 +52,7 @@ const Hero = () => {
           <Pointer name="Morhaf" />
         </motion.div>
 
-        <motion.div ref={rightDesignScope}>
+        <motion.div ref={rightDesignScope} initial={{ opacity: 0 }}>
           <Image
             src={designExample2Image}
             alt="design example 2 image"
