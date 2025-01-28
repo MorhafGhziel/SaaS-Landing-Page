@@ -70,6 +70,7 @@ const Hero = () => {
 
         <motion.div
           ref={rightPointerScope}
+          initial={{ opacity: 0 }}
           className="absolute right-80 -top-4 hidden lg:block"
         >
           <Pointer name="Ghziel" color="red" />
