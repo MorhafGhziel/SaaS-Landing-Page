@@ -1,21 +1,29 @@
+"use client";
+
 import React from "react";
 import CustomButton from "./CustomButton";
 import designExample1Image from "@/public/design-example-1.png";
 import designExample2Image from "@/public/design-example-2.png";
 import Image from "next/image";
 import Pointer from "./Pointer";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="py-24 overflow-x-clip">
       <div className="container relative">
-        <div>
+        <motion.div>
           <Image
             src={designExample1Image}
             alt="design example 1 image"
             className="absolute -left-32 top-16 hidden lg:flex"
           />
-        </div>
+        </motion.div>
+
+        <motion.div className="absolute left-56 top-96 hidden lg:block">
+          <Pointer name="Morhaf" />
+        </motion.div>
+
         <div>
           <Image
             src={designExample2Image}
@@ -23,9 +31,7 @@ const Hero = () => {
             className="absolute -right-64 -top-16 hidden lg:block"
           />
         </div>
-        <div className="absolute left-56 top-96 hidden lg:block">
-          <Pointer name="Morhaf" />
-        </div>
+
         <div className="absolute right-80 -top-4 hidden lg:block">
           <Pointer name="Ghziel" color="red" />
         </div>
