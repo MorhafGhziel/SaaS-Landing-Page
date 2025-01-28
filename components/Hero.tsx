@@ -42,6 +42,11 @@ const Hero = () => {
         { duration: 0.5, delay: 1.5 },
       ],
       [rightPointerScope.current, { x: 170, y: 0 }, { duration: 0.5 }],
+      [
+        rightPointerScope.current,
+        { x: 0, y: [0, 20, 0] },
+        { duration: 0.5, ease: "easeInOut" },
+      ],
     ]);
   }, []);
   return (
