@@ -49,12 +49,12 @@ const Features = () => {
                   className="rounded-full"
                 />
               </Avatar>
-              <Avatar className="-ml-6 border-transparent group-hover:border-green-500 transition">
+              <Avatar className="-ml-6 border-transparent group-hover:border-green-500 transition duration-500">
                 <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1 relative">
                   <Image
                     src={avatar4}
                     alt="Avatar Four"
-                    className="absolute size-full rounded-full opacity-0 group-hover:opacity-100 transition"
+                    className="absolute size-full rounded-full opacity-0 group-hover:opacity-100 transition duration-500"
                   />
                   {Array.from({ length: 3 }).map((_, i) => (
                     <span
