@@ -51,7 +51,11 @@ const Features = () => {
               </Avatar>
               <Avatar className="-ml-6 border-transparent">
                 <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
-                  <Image src={avatar4} alt="Avatar Four" />
+                  <Image
+                    src={avatar4}
+                    alt="Avatar Four"
+                    className="absolute size-full"
+                  />
                   {Array.from({ length: 3 }).map((_, i) => (
                     <span
                       className="size-1.5 rounded-full bg-white inline-flex"
