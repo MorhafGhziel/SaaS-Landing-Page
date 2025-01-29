@@ -54,7 +54,7 @@ const Features = () => {
                   <Image
                     src={avatar4}
                     alt="Avatar Four"
-                    className="absolute size-full"
+                    className="absolute size-full rounded-full"
                   />
                   {Array.from({ length: 3 }).map((_, i) => (
                     <span
