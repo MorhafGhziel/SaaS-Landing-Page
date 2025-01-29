@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { text } from "@/constants";
 import Tag from "./Tag";
 import { useScroll } from "framer-motion";
+import { useMotionValueEvent } from "framer-motion";
 
 const Introduction = () => {
   const scrollTarget = useRef(null);
