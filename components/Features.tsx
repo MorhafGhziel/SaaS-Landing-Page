@@ -76,7 +76,7 @@ const Features = () => {
                 We&apos;ve achieved{" "}
                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   <span>incredible</span>
-                  <video src={} />
+                  <video src={} autoPlay loop muted playsInline />
                 </span>{" "}
                 growth this year
               </p>
