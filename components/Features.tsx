@@ -49,7 +49,7 @@ const Features = () => {
                   className="rounded-full"
                 />
               </Avatar>
-              <Avatar className="-ml-6 border-transparent">
+              <Avatar className="-ml-6 border-transparent group-hover:border-green-500 transition">
                 <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1 relative">
                   <Image
                     src={avatar4}
