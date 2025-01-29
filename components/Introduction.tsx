@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { text } from "@/constants";
 import Tag from "./Tag";
 import { useScroll, useTransform } from "framer-motion";
@@ -13,6 +13,8 @@ const Introduction = () => {
     target: scrollTarget,
     offset: ["start end", "end start"],
   });
+
+  const [currentWord, setCurrentWord] = useState(0);
   const wordIndex = useTransform(scrollYProgress, [0, 1], [0, words.length]);
 
   return (
