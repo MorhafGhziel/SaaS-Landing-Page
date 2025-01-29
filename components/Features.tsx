@@ -69,7 +69,7 @@ const Features = () => {
           <FeatureCard
             title="Interactive Prototyping"
             description="Engage your clients with prototypes that react to user actions"
-            className="md:col-span-2 lg:col-span-1"
+            className="md:col-span-2 lg:col-span-1 group"
           >
             <div className="aspect-video flex items-center justify-center">
               <p className="text-4xl font-extrabold text-white/20 text-center">
@@ -82,7 +82,7 @@ const Features = () => {
                     loop
                     muted
                     playsInline
-                    className="absolute bottom-full left-1/2 -translate-x-1/2 rounded-2xl shadow-xl opacity-0 pointer-events-none"
+                    className="absolute bottom-full left-1/2 -translate-x-1/2 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 pointer-events-none"
                   />
                 </span>{" "}
                 growth this year
