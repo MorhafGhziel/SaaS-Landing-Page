@@ -99,10 +99,10 @@ const Features = () => {
               <Key className="w-28 outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400 transition-all duration-500">
                 shift
               </Key>
-              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400">
+              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400 transition-all duration-500">
                 alt
               </Key>
-              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400">
+              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400 transition-all duration-500">
                 C
               </Key>
             </div>
