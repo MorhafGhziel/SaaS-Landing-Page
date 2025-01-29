@@ -6,6 +6,7 @@ import Image from "next/image";
 import avatar1 from "@/public/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/public/avatar-lula-meyers.jpg";
 import avatar3 from "@/public/avatar-florence-shaw.jpg";
+import avatar4 from "@/public/avatar-owen-garcia.jpg";
 import Avatar from "./Avatar";
 import Key from "./Key";
 
@@ -50,6 +51,7 @@ const Features = () => {
               </Avatar>
               <Avatar className="-ml-6 border-transparent">
                 <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
+                  <Image src={avatar4} alt="Avatar Four" />
                   {Array.from({ length: 3 }).map((_, i) => (
                     <span
                       className="size-1.5 rounded-full bg-white inline-flex"
