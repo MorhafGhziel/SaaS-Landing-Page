@@ -82,6 +82,7 @@ const Features = () => {
                     loop
                     muted
                     playsInline
+                    className="absolute bottom-full left-1/2 -translate-x-1/2 rounded-2xl shadow-xl opacity pointer-events-none"
                   />
                 </span>{" "}
                 growth this year
