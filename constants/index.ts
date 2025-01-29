@@ -8,7 +8,7 @@ import celestialLogo from "@/public/celestial.svg";
 import twiceLogo from "@/public/twice.svg";
 
 export const navLinks = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "#home" },
   { label: "Features", href: "#features" },
   { label: "Integrations", href: "#integrations" },
   { label: "FAQs", href: "#faqs" },

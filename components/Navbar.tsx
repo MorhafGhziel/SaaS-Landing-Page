@@ -3,13 +3,28 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logoImage from "@/public/logo.svg";
-import CustomButton from "./CustomButton";
 import { navLinks } from "@/constants";
+import CustomButton from "./CustomButton";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
+    }
+  };
+
   return (
     <>
       <section className="py-4 lg:py-8 fixed w-full top-0 z-50">
@@ -26,9 +41,13 @@ const Navbar = () => {
               <div className="hidden lg:flex justify-center items-center">
                 <nav className="flex gap-6 font-medium">
                   {navLinks.map((link) => (
-                    <a href={link.href} key={link.label}>
-                      {" "}
-                      {link.label}{" "}
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      onClick={(e) => handleSmoothScroll(e, link.href)}
+                      className="cursor-pointer"
+                    >
+                      {link.label}
                     </a>
                   ))}
                 </nav>
@@ -99,7 +118,12 @@ const Navbar = () => {
                 >
                   <div className="flex flex-col items-center gap-4 py-4">
                     {navLinks.map((link) => (
-                      <a key={link.label} href={link.href}>
+                      <a
+                        key={link.label}
+                        href={link.href}
+                        onClick={(e) => handleSmoothScroll(e, link.href)}
+                        className="cursor-pointer"
+                      >
                         {link.label}
                       </a>
                     ))}
