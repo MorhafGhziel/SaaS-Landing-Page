@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { text } from "@/constants";
 import Tag from "./Tag";
+import { useScroll } from "framer-motion";
 
 const Introduction = () => {
   return (
