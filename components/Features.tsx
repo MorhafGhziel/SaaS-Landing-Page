@@ -77,7 +77,7 @@ const Features = () => {
                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   <span>incredible</span>
                   <video
-                    src="/public/gif-incredible.mp4"
+                    src="gif-incredible.mp4"
                     autoPlay
                     loop
                     muted
