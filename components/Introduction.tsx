@@ -1,12 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { text } from "@/constants";
 import Tag from "./Tag";
 import { useScroll } from "framer-motion";
 
 const Introduction = () => {
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll({
+    target: "",
+    offset: ["start end", "end start"],
+  });
   return (
     <section className="py-28 lg:py-40">
       <div className="container">
