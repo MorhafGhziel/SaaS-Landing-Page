@@ -4,6 +4,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { text } from "@/constants";
 import Tag from "./Tag";
 import { useScroll, useTransform } from "framer-motion";
+import { twMerge } from "tailwind-merge";
 
 const Introduction = () => {
   const words = text.split(" ");
@@ -35,7 +36,10 @@ const Introduction = () => {
             <span className="text-white/15">
               {" "}
               {words.map((word, wordIndex) => (
-                <span key={wordIndex}>{`${word} `}</span>
+                <span
+                  key={wordIndex}
+                  className={twMerge(wordIndex < currentWord && "text-white")}
+                >{`${word} `}</span>
               ))}{" "}
             </span>
             <span className="text-lime-400 block">
