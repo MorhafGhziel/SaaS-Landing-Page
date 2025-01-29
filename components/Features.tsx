@@ -96,7 +96,7 @@ const Features = () => {
           >
             {" "}
             <div className="aspect-video flex items-center justify-center gap-4">
-              <Key className="w-28 outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400">
+              <Key className="w-28 outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400 transition-all duration-500">
                 shift
               </Key>
               <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400">
