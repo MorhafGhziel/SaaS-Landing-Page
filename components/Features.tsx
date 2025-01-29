@@ -99,8 +99,12 @@ const Features = () => {
               <Key className="w-28 outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400">
                 shift
               </Key>
-              <Key>alt</Key>
-              <Key>C</Key>
+              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400">
+                alt
+              </Key>
+              <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400">
+                C
+              </Key>
             </div>
           </FeatureCard>
         </div>
