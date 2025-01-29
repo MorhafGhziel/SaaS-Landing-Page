@@ -27,7 +27,7 @@ const Introduction = () => {
   return (
     <section className="py-28 lg:py-40">
       <div className="container">
-        <div className="sticky top-20 md:top-28">
+        <div className="sticky top-20 md:top-28 lg:top-40">
           <div className="flex justify-center">
             <Tag>Introducing Layers</Tag>
           </div>
