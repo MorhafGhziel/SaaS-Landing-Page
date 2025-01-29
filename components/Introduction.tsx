@@ -8,7 +8,7 @@ import { useScroll } from "framer-motion";
 const Introduction = () => {
   const scrollTarget = useRef(null);
   const { scrollYProgress } = useScroll({
-    target: "",
+    target: scrollTarget,
     offset: ["start end", "end start"],
   });
   return (
