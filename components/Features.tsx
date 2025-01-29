@@ -25,7 +25,7 @@ const Features = () => {
           <FeatureCard
             title="Real-time Collaboration"
             description="Work together seamlessly with contlict-tree team editing"
-            className="md:col-span-2 lg:col-span-1"
+            className="md:col-span-2 lg:col-span-1 group"
           >
             <div className="aspect-video flex justify-center items-center">
               <Avatar className="z-40">
