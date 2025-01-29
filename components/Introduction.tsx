@@ -12,6 +12,10 @@ const Introduction = () => {
     target: scrollTarget,
     offset: ["start end", "end start"],
   });
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) =>
+    console.log("latest", latest)
+  );
   return (
     <section className="py-28 lg:py-40">
       <div className="container">
