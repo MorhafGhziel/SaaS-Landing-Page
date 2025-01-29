@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import { text } from "@/constants";
 import Tag from "./Tag";
 import { useScroll } from "framer-motion";
-import { useMotionValueEvent } from "framer-motion";
 
 const Introduction = () => {
   const scrollTarget = useRef(null);
@@ -13,9 +12,6 @@ const Introduction = () => {
     offset: ["start end", "end start"],
   });
 
-  useMotionValueEvent(scrollYProgress, "change", (latest) =>
-    console.log("latest", latest)
-  );
   return (
     <section className="py-28 lg:py-40">
       <div className="container">
