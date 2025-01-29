@@ -13,6 +13,7 @@ const Introduction = () => {
     target: scrollTarget,
     offset: ["start end", "end start"],
   });
+  const wordIndex = useTransform(scrollYProgress, [0, 1], [0, words.length]);
 
   return (
     <section className="py-28 lg:py-40">
