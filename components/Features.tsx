@@ -50,7 +50,7 @@ const Features = () => {
                 />
               </Avatar>
               <Avatar className="-ml-6 border-transparent">
-                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
+                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1 relative">
                   <Image
                     src={avatar4}
                     alt="Avatar Four"
