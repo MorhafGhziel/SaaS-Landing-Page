@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { text } from "@/constants";
 import Tag from "./Tag";
-import { useScroll } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
 
 const Introduction = () => {
   const words = text.split(" ");
