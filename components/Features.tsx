@@ -92,7 +92,7 @@ const Features = () => {
           <FeatureCard
             title="Keyboard Quick Actions"
             description="Powerful commands to help you create desians more quickly"
-            className="md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto"
+            className="md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto group"
           >
             {" "}
             <div className="aspect-video flex items-center justify-center gap-4">
