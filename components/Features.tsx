@@ -9,6 +9,7 @@ import avatar3 from "@/public/avatar-florence-shaw.jpg";
 import avatar4 from "@/public/avatar-owen-garcia.jpg";
 import Avatar from "./Avatar";
 import Key from "./Key";
+import incredibleGif from "@/public/gif-incredible.mp4";
 
 const Features = () => {
   return (
