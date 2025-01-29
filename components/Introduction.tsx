@@ -6,7 +6,7 @@ import Tag from "./Tag";
 import { useScroll } from "framer-motion";
 
 const Introduction = () => {
-  const scrollTarget = useRef();
+  const scrollTarget = useRef(null);
   const { scrollYProgress } = useScroll({
     target: "",
     offset: ["start end", "end start"],
