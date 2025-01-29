@@ -17,6 +17,12 @@ const Introduction = () => {
   const [currentWord, setCurrentWord] = useState(0);
   const wordIndex = useTransform(scrollYProgress, [0, 1], [0, words.length]);
 
+  useEffect(() => {
+    wordIndex.on("change", (latest) => {
+      setCurrentWord(latest);
+    });
+  }, [wordIndex]);
+
   return (
     <section className="py-28 lg:py-40">
       <div className="container">
