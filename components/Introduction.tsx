@@ -18,6 +18,7 @@ const Introduction = () => {
             </span>
           </div>
         </div>
+        <div className="h-[150vh]"></div>
       </div>
     </section>
   );
