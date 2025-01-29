@@ -33,12 +33,15 @@ const Introduction = () => {
           </div>
           <div className="text-4xl md:text-6xl lg:text-7xl text-center font-medium mt-10">
             <span>Your creative process deserves better.</span>
-            <span className="text-white/15">
+            <span>
               {" "}
               {words.map((word, wordIndex) => (
                 <span
                   key={wordIndex}
-                  className={twMerge(wordIndex < currentWord && "text-white")}
+                  className={twMerge(
+                    "transition duration-500 text-white/15",
+                    wordIndex < currentWord && "text-white"
+                  )}
                 >{`${word} `}</span>
               ))}{" "}
             </span>
