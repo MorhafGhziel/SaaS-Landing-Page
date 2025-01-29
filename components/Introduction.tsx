@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { text } from "@/constants";
 import Tag from "./Tag";
 import { useScroll, useTransform } from "framer-motion";
