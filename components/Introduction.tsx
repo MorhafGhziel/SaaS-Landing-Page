@@ -26,7 +26,7 @@ const Introduction = () => {
             </span>
           </div>
         </div>
-        <div className="h-[150vh]"></div>
+        <div className="h-[150vh]" ref={scrollTarget}></div>
       </div>
     </section>
   );
