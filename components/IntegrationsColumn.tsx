@@ -2,6 +2,7 @@ import React from "react";
 import { type IntegrationsType } from "@/types";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 
 const IntegrationsColumn = (props: {
   integrations: IntegrationsType;
@@ -9,7 +10,7 @@ const IntegrationsColumn = (props: {
 }) => {
   const { integrations, className } = props;
   return (
-    <div className={twMerge("flex flex-col gap-4 pb-4", className)}>
+    <motion.div className={twMerge("flex flex-col gap-4 pb-4", className)}>
       {integrations.map((integration) => (
         <div
           key={integration.name}
@@ -30,7 +31,7 @@ const IntegrationsColumn = (props: {
           </p>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
