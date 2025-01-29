@@ -9,7 +9,6 @@ import avatar3 from "@/public/avatar-florence-shaw.jpg";
 import avatar4 from "@/public/avatar-owen-garcia.jpg";
 import Avatar from "./Avatar";
 import Key from "./Key";
-import incredibleGif from "@/public/gif-incredible.mp4";
 
 const Features = () => {
   return (
@@ -77,7 +76,13 @@ const Features = () => {
                 We&apos;ve achieved{" "}
                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   <span>incredible</span>
-                  <video src={incredibleGif} autoPlay loop muted playsInline />
+                  <video
+                    src="/public/gif-incredible.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
                 </span>{" "}
                 growth this year
               </p>
