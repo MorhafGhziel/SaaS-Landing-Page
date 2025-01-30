@@ -16,13 +16,16 @@ const Navbar = () => {
     href: string
   ) => {
     e.preventDefault();
-    const targetId = href.replace("#", "");
-    const targetElement = document.getElementById(targetId);
+    setIsOpen(false); // Close menu first
 
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false);
-    }
+    setTimeout(() => {
+      const targetId = href.replace("#", "");
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300); // Delay to allow menu closing animation
   };
 
   return (
@@ -63,7 +66,7 @@ const Navbar = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-menu md:hidden"
+                  className="feather feather-menu md:hidden cursor-pointer"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   <line
@@ -75,14 +78,14 @@ const Navbar = () => {
                       "origin-left transition",
                       isOpen && "rotate-45 -translate-y-1"
                     )}
-                  ></line>
+                  />
                   <line
                     x1="3"
                     y1="12"
                     x2="21"
                     y2="12"
                     className={twMerge("transition", isOpen && "opacity-0")}
-                  ></line>
+                  />
                   <line
                     x1="3"
                     y1="18"
@@ -92,7 +95,7 @@ const Navbar = () => {
                       "origin-left transition",
                       isOpen && "-rotate-45 translate-y-1"
                     )}
-                  ></line>
+                  />
                 </svg>
                 <CustomButton
                   variant="secondary"
@@ -108,6 +111,7 @@ const Navbar = () => {
                 </CustomButton>
               </div>
             </div>
+            {/* Mobile Navigation Menu */}
             <AnimatePresence>
               {isOpen && (
                 <motion.div
