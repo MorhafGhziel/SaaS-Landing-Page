@@ -131,7 +131,7 @@ const Navbar = () => {
                         {link.label}
                       </a>
                     ))}
-                    <CustomButton variant="secondary">Log In</CustomButton>
+                    <CustomButton variant="secondary">Log </CustomButton>
                     <CustomButton variant="primary">Sign Up</CustomButton>
                   </div>
                 </motion.div>
