@@ -9,14 +9,16 @@ import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
+  // State to manage the mobile menu open/close status
   const [isOpen, setIsOpen] = useState(false);
 
+  // Function to handle smooth scrolling to section when a navigation link is clicked
   const handleSmoothScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
   ) => {
     e.preventDefault();
-    setIsOpen(false); // Close menu first
+    setIsOpen(false); // Close the mobile menu first
 
     setTimeout(() => {
       const targetId = href.replace("#", "");
@@ -30,10 +32,13 @@ const Navbar = () => {
 
   return (
     <>
+      {/* Navbar section with fixed positioning and z-index for visibility */}
       <section className="py-4 lg:py-8 fixed w-full top-0 z-50">
         <div className="container max-w-5xl">
+          {/* Navbar container with styling for background blur and rounded borders */}
           <div className="border border-white/15 rounded-[27px] md:rounded-full bg-neutral-950/70 backdrop-blur">
             <div className="grid grid-cols-2 lg:grid-cols-3 px-4 p-2 md:pr-2 items-center">
+              {/* Logo Section */}
               <div>
                 <Image
                   src={logoImage}
@@ -41,6 +46,7 @@ const Navbar = () => {
                   className="h-9 md:h-auto w-auto"
                 />
               </div>
+              {/* Desktop Navigation Menu */}
               <div className="hidden lg:flex justify-center items-center">
                 <nav className="flex gap-6 font-medium">
                   {navLinks.map((link) => (
@@ -55,7 +61,9 @@ const Navbar = () => {
                   ))}
                 </nav>
               </div>
+              {/* Mobile Menu Button & Authentication Buttons */}
               <div className="flex justify-end gap-4">
+                {/* Mobile menu toggle button */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -97,6 +105,7 @@ const Navbar = () => {
                     )}
                   />
                 </svg>
+                {/* Log In and Sign Up Buttons (visible on medium+ screens) */}
                 <CustomButton
                   variant="secondary"
                   className="hidden md:inline-flex items-center"
@@ -131,6 +140,7 @@ const Navbar = () => {
                         {link.label}
                       </a>
                     ))}
+                    {/* Log In and Sign Up Buttons for Mobile */}
                     <CustomButton variant="secondary">Log In</CustomButton>
                     <CustomButton variant="primary">Sign Up</CustomButton>
                   </div>
@@ -140,6 +150,7 @@ const Navbar = () => {
           </div>
         </div>
       </section>
+      {/* Spacer to prevent content from being hidden behind fixed navbar */}
       <div className="pb-[86px] md:pb-[98px] lg:pb-[130px]"></div>
     </>
   );
